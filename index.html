@@ -3,8 +3,8 @@
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROBOSE</title>
-    <meta name="description" content="ROBOSE Project Page">
+    <title>OpenHelix</title>
+    <meta name="description" content="OpenHelix Project Page">
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- FontAwesome for icons -->
@@ -38,7 +38,7 @@
 <body>
 <div class="container">
     <div class="row text-center">
-        <h1><strong>ROBOSE</strong>: A Simple yet Effective Dual System for Robot Learning</h1>
+        <h1><strong>OpenHelix</strong>: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation</h1>
         <p>Can Cui, Pengxiang Ding*, Wenxuan Song, Hangyu Liu, Yang Liu,<br>
         Bofang Jia, Han Zhao, Siteng Huang, Zhaoxin Fan, Donglin Wang†</p>
         <p>Westlake University, Zhejiang University, HKUST(GZ), Beijing Advanced Innovation Center for Future Blockchain and Privacy </p>
@@ -48,14 +48,14 @@
     <div class="row text-center" style="margin-top: 20px;">
       <!-- PDF Link -->
       <span class="link-block">
-        <a href="./static/paper/CARP.pdf" class="btn btn-custom" target="_blank">
+        <a href="https://openhelix-robot.github.io/" class="btn btn-custom" target="_blank">
           <i class="fas fa-file-pdf"></i> Paper
         </a>
       </span>
 
       <!-- arXiv Link -->
       <span class="link-block">
-        <a href="https://arxiv.org/abs/2412.06782" class="btn btn-custom" target="_blank">
+        <a href="https://openhelix-robot.github.io/" class="btn btn-custom" target="_blank">
           <i class="fas fa-book"></i> arXiv
         </a>
       </span>
@@ -69,8 +69,8 @@
 
       <!-- Huggingface Link -->
       <span class="link-block">
-        <a href="https://huggingface.co/zhefeigong/carp" class="btn btn-custom" target="_blank">
-          <i class="fas fa-smile-beam"></i> Huggingface
+        <a href="https://openhelix-robot.github.io/" class="btn btn-custom" target="_blank">
+          <i class="fas fa-smile-beam"></i> Huggingface(coming soon)
         </a>
       </span>
     </div>
@@ -86,7 +86,7 @@
         <div class="col-md-8 col-md-offset-2">
             <h3>Abstract</h3>
             <p class="text-justify">
-                ROBOSE proposes a simple yet effective dual system for robot learning by hierarchically integrating a high-level Multimodal Large Language Model (MLLM) with a low-level policy model. Through pre-alignment, prompt tuning, and multimodal reasoning learning, ROBOSE significantly enhances generalization, reduces training cost, and achieves state-of-the-art results on challenging robot manipulation benchmarks such as CALVIN and CALVIN-D.
+                Dual-system VLA (Vision-Language-Action) architectures have become a hot topic in embodied intelligence research, but there is a lack of sufficient open-source work for further performance analysis and optimization. To address this problem, this paper will summarize and compare the structural designs of existing dual-system architectures, and conduct systematic empirical evaluations on the core design elements of existing dual-system architectures. Ultimately, it will provide a low-cost open-source model for further exploration. Of course, this project will continue to update with more experimental conclusions and open-source models with improved performance for everyone to choose from.
             </p>
             <p style="text-align: center;"><img src="./assets/robose_teaser.jpg" class="img-responsive"></p>
 
@@ -98,7 +98,7 @@
 
             <h3>Approach</h3>
             <p class="text-justify">
-                ROBOSE bridges the high-level MLLM and the low-level policy using a learned <ACT> token and linear projection. Prompt tuning allows efficient training without altering MLLM parameters. An auxiliary task ensures the MLLM performs multimodal reasoning by predicting actions directly from its latent embeddings. The policy model adopts a diffusion-based learning mechanism conditioned on visual, proprioceptive, and goal features.
+                OpenHelix bridges the high-level MLLM and the low-level policy using a learned <ACT> token and linear projection. Prompt tuning allows efficient training without altering MLLM parameters. An auxiliary task ensures the MLLM performs multimodal reasoning by predicting actions directly from its latent embeddings. The policy model adopts a diffusion-based learning mechanism conditioned on visual, proprioceptive, and goal features.
             </p>
             <p style="text-align: center;"><img src="./assets/arch.jpg" class="img-responsive"></p>
 
@@ -116,13 +116,13 @@
 
             <h3>Results</h3>
             <p class="text-justify">
-                ROBOSE outperforms previous methods across all metrics in CALVIN, CALVIN-E (language generalization), and CALVIN-D (dynamic vision generalization). It achieves better success rates with fewer parameters and less training data, validating its data efficiency and robustness.
+                OpenHelix outperforms previous methods across all metrics in CALVIN, CALVIN-E (language generalization), and CALVIN-D (dynamic vision generalization). It achieves better success rates with fewer parameters and less training data, validating its data efficiency and robustness.
             </p>
             <p style="text-align: center;"><img src="./assets/results.jpg" class="img-responsive"></p>
 
             <h3>Citation</h3>
-            <pre><code>@article{Cui2024ROBOSE,
-  title={ROBOSE: A Simple yet Effective Dual System for Robot Learning},
+            <pre><code>@article{Cui2024OPENHELIX,
+  title={OpenHelix: A Simple yet Effective Dual System for Robot Learning},
   author={Can Cui and Pengxiang Ding and Wenxuan Song and Hangyu Liu and Yang Liu and Bofang Jia and Han Zhao and Siteng Huang and Zhaoxin Fan and Donglin Wang},
   journal={arXiv preprint arXiv:2403.13358},
   year={2024}
